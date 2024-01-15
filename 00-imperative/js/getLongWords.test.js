@@ -1,19 +1,24 @@
-import { sumNumbersFromInitialValue } from "./sumNumbersFromInitialValue.js";
+import getLongWords from "./getLongWords.js";
+describe("Given getLongWords function", () => {
+  test("When it receives a languages array, Then returns ['JavaScript', 'TypeScript'] ", () => {
+    const LANGUAGES = ["Java", "C++", "JavaScript", "C#", "TypeScript"];
+    const EXPECTED_RESULT = ["JavaScript", "TypeScript"];
 
-describe("Given sumNumbersFromInitialValue", () => {
-  test("", () => {
-    // Arrange
+    const resultArray = getLongWords(LANGUAGES);
 
-    // Act
-
-    // Assert
+    expect(resultArray).toEqual(EXPECTED_RESULT);
+    expect(resultArray.length).toBe(2);
+    expect(resultArray).toBeDefined();
   });
 
-  test("", () => {
-    // Arrange
+  test("When it receives the beatles array, Then returns ['George', 'Ringo'] ", () => {
+    const BEATLES = ["John", "George", "Paul", "Ringo"];
+    const EXPECTED_RESULT = ["George", "Ringo"];
 
-    // Act
+    const resultArray = getLongWords(BEATLES);
 
-    // Assert
+    expect(resultArray).toEqual(EXPECTED_RESULT);
+    expect(resultArray.length).toBe(2);
+    expect(resultArray).toBeDefined();
   });
 });
