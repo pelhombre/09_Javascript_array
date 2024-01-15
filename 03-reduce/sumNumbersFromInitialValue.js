@@ -7,3 +7,16 @@
  */
 
 const NUMBERS = [1, 2, 3, 4, 5];
+
+const sumNumbersFromInitialValue = (initialValue) => {
+    let result = initialValue
+
+    for(let index = 0; index < NUMBERS.length; index++){
+        const number = NUMBERS[index];
+
+        result += number ;
+    }
+}
+
+console.log(sumNumbersFromInitialValue(0));
+console.log(sumNumbersFromInitialValue(10));
