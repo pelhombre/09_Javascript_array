@@ -5,3 +5,14 @@
  */
 
 const MATES = ["john", "JACOB", "jinGleHeimer", "schmidt"];
+
+export const capitalizeMates = () => {
+  const mapedMates = MATES.map((name) => {
+    const capitalizedWord = `${name.charAt(0).toUpperCase()}${name
+      .slice(1)
+      .toLowerCase()}`;
+    return capitalizedWord;
+  });
+
+  return mapedMates;
+};
