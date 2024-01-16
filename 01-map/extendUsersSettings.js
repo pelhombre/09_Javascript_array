@@ -57,10 +57,11 @@ const USERS = [
 const extendUsersSettings = (users) => {
   return users.map((user, index) => {
     return {
-      ...user, 
+      ...user,
       id: index,
       isEnabled: true,
     };
   });
 };
+
 export default extendUsersSettings;
