@@ -2,10 +2,11 @@ import { extractCountriesWithFiveCharactersOrFewer } from "./extractCountriesWit
 
 describe("Given function extractCountriesWithFiveCharactersOrFewer...", () => {
   test(
-    "When array of countries is entered." + "Then expected result should be returned",
+    "When array of countries is entered." +
+      "Then expected result should be returned",
     () => {
       //Arrange
-      const expected = ["United Kindom"];
+      const expected = ["Italy"];
       //Act
       const result = extractCountriesWithFiveCharactersOrFewer(expected);
       //Assert

@@ -2,7 +2,8 @@ import { customersWhoBelongToMembership } from "./customersWhoBelongToMembership
 
 describe("Given function customersWhoBelongToMembership...", () => {
   test(
-    "When array of members is entered." + "Then expected result should be returned",
+    "When array of members is entered." +
+      "Then expected result should be returned",
     () => {
       //Arrange
       const expected = [
