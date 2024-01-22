@@ -8,15 +8,10 @@
 
 const NUMBERS = [1, 2, 3, 4, 5];
 
-const sumNumbersFromInitialValue = (initialValue) => {
-  let result = initialValue;
+export const sumNumbersFromInitialValue = (numbers, initialNumber) => {
+  const totalResult = numbers.reduce((accumulator, number) => {
+    return (accumulator += number);
+  }, initialNumber);
 
-  for (let index = 0; index < NUMBERS.length; index++) {
-    const number = NUMBERS[index];
-
-    result += number;
-  }
+  return totalResult;
 };
-
-console.log(sumNumbersFromInitialValue(0));
-console.log(sumNumbersFromInitialValue(10));
